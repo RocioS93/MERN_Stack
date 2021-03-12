@@ -1,0 +1,10 @@
+.formbg{
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    border: 3px solid #EDEDED;
+    width:500px;
+    height: 40px;
+    margin: auto;
+    padding: 5px;
+    vertical-align: middle;
+}  
