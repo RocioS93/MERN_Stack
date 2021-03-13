@@ -72,7 +72,7 @@ return(
           key={index}
           bgColor={box.color}
           width={box.width}
-          height={box.width}
+          height={box.height}
         ></StyledBox>
       ))}
     </div>
