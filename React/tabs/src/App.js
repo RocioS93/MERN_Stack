@@ -7,15 +7,9 @@ function App() {
     <div>
       <h1>Tabs Demo</h1>
       <Tabs>
-        <div label="Tab 1">
-          Tab 1 content is showing here.
-        </div>
-        <div label="Tab 2">
-          Tab 2 content is showing here.
-        </div>
-        <div label="Tab 3">
-          Tab 3 content is showing here.
-        </div>
+        <div label="Tab 1">Tab 1 content is showing here.</div>
+        <div label="Tab 2">Tab 2 content is showing here.</div>
+        <div label="Tab 3">Tab 3 content is showing here.</div>
       </Tabs>
     </div>
   );
