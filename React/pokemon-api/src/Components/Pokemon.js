@@ -6,7 +6,7 @@ const Pokemon = (props) => {
     const [pokemon, setPokemon] = useState([]);
 
     const onClick = () => {
-        fetch('https://pokeapi.co/api/v2/pokemon?limit=100&offset=200')
+        fetch('https://pokeapi.co/api/v2/pokemon?limit=807')
             .then(response => response.json())
             .then(response => setPokemon(response.results))
     }
