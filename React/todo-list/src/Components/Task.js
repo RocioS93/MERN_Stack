@@ -1,19 +1,31 @@
 import React from "react";
 
 const Task = (props) => {
-    const {task, index, setList} = props;
+    const {task, index, list, setList} = props;
 
     const onClick = () => {
-        setList();
-    }
+        setList(() => {
+            return list.filter(task => list.indexOf(task) !== index)
+        });
+    };
+
+    const onChange = () => {
+        list[index].isComplete = !list[index].isComplete
+        setList([...list]);
+    };
+
+    let conditionalClass = ""; 
+    if (task.isComplete){
+        conditionalClass = "strike"
+    } 
 
     return(
-        <div className="conatiner">
-            <h4>{task.name}</h4>
+        <div className="container">
+            <h4 className={conditionalClass}>{task.name}</h4>
             <div className="container">
-                <label htmlFor="checkbox">Completed?</label>
-                <input type="checkbox" name=""/>
-                <button onClick={onClick} className="btn btn-sm btn-danger" >Delete</button>
+                <input onChange={onChange} type="checkbox" checked={task.isComplete} />
+                <br/>
+                <button className="btn btn-sm btn-danger" onClick={onClick} >Delete</button>
             </div>
         </div>
     )

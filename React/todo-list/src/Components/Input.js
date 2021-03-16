@@ -7,11 +7,12 @@ const Input = (props) => {
         name: "",
         isComplete: false,
     };
-    const onChange = (e) => {
+    
+    const onChange = e => {
         task.name = e.target.value;
     }
 
-    const onClick = (e) => {
+    const onClick = e => {
         setList([...list, task]);
         e.target.value = "";
         task = "";
