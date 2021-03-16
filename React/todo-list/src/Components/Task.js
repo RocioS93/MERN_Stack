@@ -22,11 +22,8 @@ const Task = (props) => {
     return(
         <div className="container">
             <h4 className={conditionalClass}>{task.name}</h4>
-            <div className="container">
-                <input onChange={onChange} type="checkbox" checked={task.isComplete} />
-                <br/>
-                <button className="btn btn-sm btn-danger" onClick={onClick} >Delete</button>
-            </div>
+            <input onChange={onChange} type="checkbox" checked={task.isComplete} />
+            <button className="btn btn-sm btn-danger" onClick={onClick} >Delete</button>
         </div>
     )
 }

@@ -21,7 +21,9 @@ const Input = (props) => {
     return(
         <div className="container w-50 mt-3">
             <input className="form-control" onChange={onChange} type="text" name="task"/>
-            <button className="btn btn-primary btn-block mt-2" onClick={onClick}>Add</button>
+            <button className="btn btn-primary btn-block mt-2" onClick={onClick}>
+                Add
+            </button>
         </div>
     )
 }
